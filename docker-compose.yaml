@@ -2,7 +2,7 @@ version: '3.7'
 
 services: 
   service1:
-    image: docker/wk9project:service1
+    image: adv-python/wk9project:service1
     deploy:
       replicas: 3
     ports:
@@ -10,19 +10,19 @@ services:
       published: 5000
       protocol: tcp
   service2:
-    image: docker/wk9project:service2
+    image: adv-python/wk9project:service2
     ports:
     - target: 5001
       published: 5001
       protocol: tcp
   service3:
-    image: docker/wk9project:service3
+    image: adv-python/wk9project:service3
     ports:
     - target: 5002
       published: 5002
       protocol: tcp
   service4:
-    image: docker/wk9project:service4
+    image: adv-python/wk9project:service4
     ports:
     - target: 5003
       published: 5003

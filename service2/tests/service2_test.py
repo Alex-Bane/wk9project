@@ -11,5 +11,5 @@ class TestBase(TestCase):
 
 class TestAlpha(TestBase):
     def test_alpha(self):
-        response = self.client.get(url_for('rating'))
+        response = self.client.get(url_for('char_class'))
         self.assertEquals(response.status_code,200)

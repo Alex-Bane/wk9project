@@ -11,5 +11,5 @@ class TestBase(TestCase):
 
 class TestNumber(TestBase):
     def test_number(self):
-        response = self.client.get(url_for('affluence'))
+        response = self.client.get(url_for('race'))
         self.assertEquals(response.status_code,200)

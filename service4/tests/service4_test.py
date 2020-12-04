@@ -12,5 +12,5 @@ class TestBase(TestCase):
 
 class TestNumber(TestBase):
     def test_number(self):     
-        response = self.client.post(url_for('name'), data="5 Star , water")
+        response = self.client.post(url_for('stats'), data="Human")
         self.assertEquals(response.status_code,200)

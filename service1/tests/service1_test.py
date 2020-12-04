@@ -12,8 +12,8 @@ class TestResponse(TestBase):
     def test_page(self):
         with patch("requests.get") as g:
             with patch("requests.post") as p:
-                g.return_value.text = "water"
-                p.return_value.text = "Jeanne"
+                g.return_value.text = "Half-Orc"
+                p.return_value.text = "Bonus Stats: +2 to Strength, +1 to Constitution"
 
                 response = self.client.get(url_for("index"))
-                self.assertIn(b'you rolled a water its affluence is water and its called Jeanne', response.data)
+                self.assertIn(b'Bonus Stats: +2 to Strength, +1 to Constitution"', response.data)

@@ -1,7 +1,7 @@
 - name: "clone git" 
   git:
     repo: https://github.com/Alex-Bane/wk9project.git
-    dest: /home
+    dest: /wk9project
     update: yes
 
 - name: "make the swarm"

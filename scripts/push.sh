@@ -1,3 +1,3 @@
 #! /bin/bash
-docker login
+sudo docker login
 docker-compose push

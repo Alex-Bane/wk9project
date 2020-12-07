@@ -1,8 +1,0 @@
-[swarm-managers]
-swarm-manager
-
-[swarm-workers]
-swarm-worker
-
-[NGINX]
-NGINX

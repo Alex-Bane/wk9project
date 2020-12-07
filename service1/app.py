@@ -10,7 +10,7 @@ def index():
 
     char_class = requests.get("http://service2:5001/char_class")
     race = requests.get("http://service3:5002/race")
-    stats = requests.post("http://service4:5003/stats", data=race.text, data2=char_class.text)
+    stats = requests.post("http://service4:5003/stats", data=race.text)
 
     return render_template('index.html', char_class=char_class.text, race=race.text, stats=stats.text)
 

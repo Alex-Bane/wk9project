@@ -11,7 +11,6 @@ def stats():
         stats.append(random.randint(3, 18))
     bonus = ""
     race = request.data.decode('utf-8')
-    char_class = request.data2.decode('utf-8')
     if race == "Human":
         bonus = "Bonus Stats: +1 to all"
         stats[0] = stats[0] + 1
@@ -50,7 +49,7 @@ def stats():
     inteligence = "Inteligence: ", int_stat
     wisdom = "Wisdom: ", wis_stat
     charisma = "Charisma: ", cha_stat
-    combined = bonus, "Your ", char_class, "has: " ,''.join(str(stat) for stat in strength), ''.join(str(stat) for stat in dexterity), ''.join(str(stat) for stat in constitution), ''.join(str(stat) for stat in inteligence), ''.join(str(stat) for stat in wisdom), ''.join(str(stat) for stat in charisma)
+    combined = bonus, ''.join(str(stat) for stat in strength), ''.join(str(stat) for stat in dexterity), ''.join(str(stat) for stat in constitution), ''.join(str(stat) for stat in inteligence), ''.join(str(stat) for stat in wisdom), ''.join(str(stat) for stat in charisma)
     combined_string = '\n'.join(str(stat) for stat in combined)
     return Response(combined_string, mimetype="text/plain")
 

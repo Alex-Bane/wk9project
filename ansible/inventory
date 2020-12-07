@@ -1,5 +1,5 @@
 [swarmmanagers]
-jenkinsvm
+swarm-manager
 
 [swarmmanagers:vars]
 ansible_user=jenkins
@@ -8,8 +8,8 @@ ansible_ssh_private_key_file=~/.ssh/id_rsa
 ansible_python_interpreter=/usr/bin/python3
 
 [swarmworkers]
-registry-vm
-swarm
+swarm-worker-1
+swarm-worker-2
 
 [swarmworkers:vars]
 ansible_user=jenkins

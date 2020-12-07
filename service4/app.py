@@ -11,28 +11,28 @@ def stats():
         stats.append(random.randint(3, 18))
     bonus = ""
     race = request.data.decode('utf-8')
-    if race == "Human":
-        bonus = "Bonus Stats: +1 to all"
+    if race == "Human1":
+        bonus = "1Bonus Stats: +1 to all"
         stats[0] = stats[0] + 1
         stats[1] = stats[1] + 1
         stats[2] = stats[2] + 1
         stats[3] = stats[3] + 1
         stats[4] = stats[4] + 1
         stats[5] = stats[5] + 1
-    elif race == "Elf":
-        bonus = "Bonus Stats: +2 to Dexterity, +1 to Wisdom"
+    elif race == "Elf1":
+        bonus = "1Bonus Stats: +2 to Dexterity, +1 to Wisdom"
         stats[1] = stats[1] + 2
         stats[4] = stats[4] + 1
-    elif race == "Dwarf":
-        bonus = "Bonus Stats: +2 to Constitution, +1 to Strength"
+    elif race == "Dwarf1":
+        bonus = "1Bonus Stats: +2 to Constitution, +1 to Strength"
         stats[2] = stats[2] + 2
         stats[0] = stats[0] + 1
-    elif race == "Halfling":
-        bonus = "Bonus Stats: +2 to Charisma, +1 to Dexterity"
+    elif race == "Halfling1":
+        bonus = "1Bonus Stats: +2 to Charisma, +1 to Dexterity"
         stats[5] = stats[5] + 2
         stats[1] = stats[1] + 1
-    elif race == "Half-Orc":
-        bonus = "Bonus Stats: +2 to Strength, +1 to Constitution"
+    elif race == "Half-Orc1":
+        bonus = "1Bonus Stats: +2 to Strength, +1 to Constitution"
         stats[0] = stats[0] + 2
         stats[2] = stats[2] + 1
     else:

@@ -2,7 +2,7 @@ version: '3.7'
 
 services: 
   service1:
-    image: adv-python/wk9project:service1
+    image: alexbane/service1:latest
     build: ./service1
     deploy:
       replicas: 3
@@ -11,21 +11,21 @@ services:
       published: 5000
       protocol: tcp
   service2:
-    image: adv-python/wk9project:service2
+    image: alexbane/service2:latest
     build: ./service2
     ports:
     - target: 5001
       published: 5001
       protocol: tcp
   service3:
-    image: adv-python/wk9project:service3
+    image: alexbane/service3:latest
     build: ./service3
     ports:
     - target: 5002
       published: 5002
       protocol: tcp
   service4:
-    image: adv-python/wk9project:service4
+    image: alexbane/service4:latest
     build: ./service4
     ports:
     - target: 5003

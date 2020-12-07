@@ -1,5 +1,5 @@
 [swarmmanagers]
-adv-python
+jenkinsvm
 
 [swarmmanagers:vars]
 ansible_user=jenkins

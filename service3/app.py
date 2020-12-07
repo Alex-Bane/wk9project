@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/race', methods=['GET'])
 def Race():
-    race = ["Dwarf", "Human", "Elf", "Half-Orc", "Halfling"]
+    race = ["Dwarf1", "Human1", "Elf1", "Half-Orc1", "Halfling1"]
     race_pick = race[random.randrange(0,5)]
     return Response(race_pick, mimetype="text/plain")
 

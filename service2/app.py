@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/char_class', methods=['GET'])
 def char_class():
-    char_class = ["Fighter1", "Rogue1", "Wizard1", "Ranger1", "Cleric1"]
+    char_class = ["Fighter", "Rogue", "Wizard", "Ranger", "Cleric"]
 
 
     return Response(random.choice(char_class), mimetype="text/plain")
